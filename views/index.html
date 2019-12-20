@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Companies List
+{% endblock %}
+{% block content %}
+<div id="company-data">
+    <ul class="list-style-none">
+    {% for item in paginatedData %}
+        <li class="search-result search-result__occluded-item ember-view">
+            <div class="search-entity search-result search-result--person search-result--occlusion-enabled ember-view">
+                <div class="search-result__wrapper">
+                    <div class="search-result__image-wrapper">
+                        <div class="display-flex ivm-view-attr__img-wrapper ivm-view-attr__img-wrapper--use-img-tag">
+                            <div class="presence-entity presence-entity--size-4">
+                                <img class="ivm-view-img-centered photo-circle-4" src="{{ item['avatar'] }}" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="search-result__info pt3 pb4 ph0">
+                        <h3 class="actor-name-with-distance search-result__title single-line-truncate">
+                            {{ item['name']|striptags }}
+                        </h3>
+                    </div>
+                    <p class="subline-level-1 t-14 t-black t-normal search-result__truncate">
+                        {{ item['title']|striptags }} at {{ item['company']|striptags }}
+                    </p>
+                    <br>
+                    <p class="subline-level-1 t-14 t-black t-normal search-result__truncate">
+                        {{ item['bio']|striptags }}
+                    </p>
+                </div>
+            </div>
+        </li>
+    {% endfor %}
+    {{ paginatedLinks|raw }}
+    </ul>
+</div>
+{% endblock %}

@@ -1,0 +1,20 @@
+{
+    "name": "kliment.petkov/ba-api-client",
+    "description": "Basic Authentication API client",
+    "type": "project",
+    "require": {
+        "twig/twig": "^2.0",
+        "rmccue/requests": ">=1.0"
+    },
+    "authors": [
+        {
+            "name": "Kliment Petkov"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    }
+}
+

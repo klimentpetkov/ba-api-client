@@ -1,0 +1,190 @@
+div#content {
+    width: 980px;
+    margin: 0 auto;
+}
+
+ul {
+    margin-top: 30px;
+}
+
+li:nth-child {
+    margin: 60px;
+}
+/* Main item container (outer wrapper) */
+.search-result--occlusion-enabled:first-of-type, .search-results__wrapper--borderless .search-result:first-of-type {
+    margin-top: 0;
+}
+
+.search-result:first-of-type {
+    margin-top: -8px;
+}
+
+.search-result {
+    background-color: transparent;
+    clear: both;
+    width: 100%;
+    list-style: none;
+}
+
+.list-style-none {
+    list-style: none !important;
+}
+
+/* Inner wrapper */
+.search-result__wrapper.search-result__wrapper {
+    display: flex;
+    align-items: flex-start;
+    text-decoration: none;
+}
+
+/* Image container */
+.presence-entity--size-4 {
+    width: 56px;
+    height: 56px;
+}
+
+.presence-entity {
+    display: flex;
+    position: relative;
+}
+
+/* Image */
+.photo-circle-4 {
+    width: 56px;
+    height: 56px;
+    box-sizing: border-box;
+    background-clip: content-box;
+    border: 2px solid transparent;
+    border-radius: 49.9%;
+}
+
+.ivm-view-img-centered {
+    background-position: 50%;
+}
+
+/* Info area */
+.search-result__occluded-item:first-child .search-result__info, .search-results__list--cards + .search-result__occluded-item .search-result__info {
+    border-top: none;
+}
+
+.search-result--occlusion-enabled .search-result__info.search-result__info {
+    border-top: 1px solid rgba(0,0,0,.15);
+}
+.search-result:first-child .search-result__info, .search-results__list--cards + .search-result .search-result__info {
+    border-top: none;
+}
+
+.search-result__info {
+    flex: 1;
+    min-width: 0;
+    position: relative;
+    border-top: 1px solid rgba(0,0,0,.15);
+}
+
+.pb4 {
+    padding-bottom: 16px !important;
+}
+
+.pt3, .pv3 {
+    padding-top: 12px !important;
+}
+
+.ph0 {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+/* Name */
+.search-result--person .actor-name-with-distance, .search-result--provider .actor-name-with-distance {
+    line-height: 20px;
+    display: inline;
+    color: #0073b1;
+}
+.search-result--person .actor-name, .search-result--provider .actor-name, .search-result__title {
+    color: #0073b1;
+}
+.search-result__title {
+    autoprefixer: off;
+}
+.search-result--person .search-result__subline-level-1, .search-result__title {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    margin: 0 auto;
+    white-space: normal;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+}
+
+.actor-name-with-distance.single-line-truncate .name-and-icon {
+    white-space: nowrap;
+}
+
+.search-result--person .actor-name-with-distance, .search-result--provider .actor-name-with-distance {
+    line-height: 20px;
+}
+
+.search-result--person .actor-name, .search-result--provider .actor-name, .search-result__title {
+    color: #0073b1;
+}
+
+.actor-name-with-distance {
+    position: relative;
+    overflow: hidden;
+    font-size: 1.2em;
+    line-height: 1.75;
+    font-weight: 600;
+    color: rgba(0,0,0,.9);
+}
+.large-text, h3 {
+    font-size: 2.4rem;
+    line-height: 1.33333;
+}
+.large-text, h2, h3 {
+    font-weight: 400;
+    color: rgba(0,0,0,.9);
+}
+abbr, audio, b, body, canvas, caption, cite, code, del, dfn, em, h1, h2, h3, h4, h5, h6, html, i, iframe, img, ins, kbd, label, legend, mark, object, q, samp, small, span, strong, summary, tbody, td, tfoot, th, thead, time, tr, var, video {
+    outline: 0;
+}
+
+.actor-name-with-distance.single-line-truncate .name-and-icon {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: calc(100% - 48px);
+}
+.actor-name-with-distance .name-and-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.actor-name-with-distance.single-line-truncate .name-and-icon {
+    white-space: nowrap;
+}
+
+.actor-name-with-distance.single-line-truncate .name-and-icon {
+    white-space: nowrap;
+}
+
+.search-result__truncate {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.t-14 {
+    font-size: 1.4rem;
+    line-height: 1.42857;
+}
+.t-normal {
+    font-weight: 400;
+}
+.t-black {
+    color:
+            rgba(0,0,0,.9);
+}
+
+p.subline-level-1 {
+    display: block !important;
+}
+

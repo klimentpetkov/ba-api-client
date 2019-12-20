@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Error
+{% endblock %}
+{% block content %}
+    <div id="error">
+        Server returned a status {{ status}}! With message {{ message }}!
+    </div>
+{% endblock %}
